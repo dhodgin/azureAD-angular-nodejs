@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html ng-app="nodeJWTApp" ng-controller="homeController" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Node JWT validation sample</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+  <script src="https://code.angularjs.org/1.3.13/angular-route.js"></script>
+
+  <script src="scripts/adal-angular.js"></script>
+  <script src="scripts/adal.js"></script>
+  <script src="scripts/angularApp.js"></script>
+  <style>
+    .button {
+      border: 2px solid #c11d03;
+      border-radius: 5px;
+      padding: 5px 10px;
+      color: #000;
+      text-decoration: none;
+      background-color: #faf6e1;
+      margin-right:10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div data-ng-include="'views/header.tpl.html'" data-ng-controller="HeaderController">
+  </div>
+  <div data-ng-view>
+  </div>
+</body>
+</html>

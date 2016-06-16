@@ -1,0 +1,13 @@
+﻿<p>Node JWT validation sample</p>
+<a data-ng-hide="userInfo.isAuthenticated" data-ng-click="login()" class="button">Login</a>
+<a data-ng-hide="!userInfo.isAuthenticated" data-ng-click="logout()" class="button">Logout</a>
+<a href="/" class="button">home</a>
+<a href="/open" class="button">request open data</a>
+<a href="/secure" class="button">request secured data</a>
+<br />
+<p ng-if="userInfo">
+  <b>This is what Angular knows about the returned token client side via the 'userInfo' scope variable:</b>
+  <br />
+  <pre>{{userInfo | json}}</pre>
+</p>
+<hr />
